@@ -12,6 +12,11 @@ jobs:
   check-python:
     runs-on: ubuntu-latest
     steps:
+      - name: Python version
+        run: python --version
+  check-code:
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Set up Python
